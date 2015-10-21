@@ -1446,9 +1446,9 @@ GameObject:
   - 114: {fileID: 11486774}
   - 114: {fileID: 11480636}
   - 114: {fileID: 11411396}
-  - 114: {fileID: 11483792}
+  - 114: {fileID: 11459408}
   m_Layer: 0
-  m_Name: Player V2
+  m_Name: Player V3
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3526,6 +3526,18 @@ MonoBehaviour:
   myCameraObject: {fileID: 160802}
   myCamera: {fileID: 2034042}
   myListener: {fileID: 8142674}
+--- !u!114 &11459408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27df7f66a1fe1e14ead46d6710203c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 9599568}
 --- !u!114 &11480636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3535,17 +3547,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6648592d4c2c237419fd202eb10a3029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11483792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 180002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f68649ab6382194195101fcaddf3cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11486774
@@ -3562,22 +3563,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 220
-    i1: 162
-    i2: 119
-    i3: 120
-    i4: 165
-    i5: 166
-    i6: 195
+    i0: 69
+    i1: 76
+    i2: 180
+    i3: 153
+    i4: 137
+    i5: 44
+    i6: 204
     i7: 132
-    i8: 24
-    i9: 83
-    i10: 26
-    i11: 203
-    i12: 238
-    i13: 49
-    i14: 219
-    i15: 1
+    i8: 233
+    i9: 61
+    i10: 205
+    i11: 166
+    i12: 22
+    i13: 129
+    i14: 136
+    i15: 211
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
 --- !u!136 &13683388
@@ -3819,7 +3820,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 9599568}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 180002}
